@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.KullaniciProfileGoruntuleFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ProfileBilgiS"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/background_color_buz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewAdSoyadS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/oswald"
+            android:text="Selam, Kullanici_Adi"
+            android:textColor="#5D64B4"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfileResimS"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewProfileResimS"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/profile_pic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageViewMesajAt"
+            android:layout_width="40dp"
+            android:layout_height="25dp"
+            android:src="@drawable/mesaj_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewAdSoyadS"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewAdSoyadS"
+            app:layout_constraintTop_toTopOf="@+id/textViewAdSoyadS" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView16S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/oswald"
+        android:text="Şehir:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewSehirS"
+        app:layout_constraintTop_toBottomOf="@+id/ProfileBilgiS" />
+
+    <TextView
+        android:id="@+id/textViewSehirS"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/oswald"
+        android:paddingTop="2dp"
+        android:paddingLeft="8dp"
+        android:background="@drawable/edittextarkaplan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16S" />
+
+    <TextView
+        android:id="@+id/textView17S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/oswald"
+        android:text="İlgi Alanı:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewIlgiAlaniS"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSehirS" />
+
+    <TextView
+        android:id="@+id/textViewIlgiAlaniS"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittextarkaplan"
+        android:textSize="18sp"
+        android:fontFamily="@font/oswald"
+        android:paddingTop="2dp"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17S" />
+
+    <TextView
+        android:id="@+id/textView18S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/oswald"
+        android:text="Geliştirdiği Dil:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewGelistirdigiDilS"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIlgiAlaniS" />
+
+    <TextView
+        android:id="@+id/textViewGelistirdigiDilS"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittextarkaplan"
+        android:textSize="18sp"
+        android:fontFamily="@font/oswald"
+        android:paddingTop="2dp"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18S" />
+
+    <TextView
+        android:id="@+id/textView19S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/oswald"
+        android:text="Yaş:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewYasS"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGelistirdigiDilS" />
+
+    <TextView
+        android:id="@+id/textViewYasS"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittextarkaplan"
+        android:textSize="18sp"
+        android:fontFamily="@font/oswald"
+        android:paddingTop="2dp"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19S" />
+
+    <TextView
+        android:id="@+id/textView20S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/oswald"
+        android:text="Cinsiyet:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewCinsiyetS"
+        app:layout_constraintTop_toBottomOf="@+id/textViewYasS" />
+
+    <TextView
+        android:id="@+id/textViewCinsiyetS"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittextarkaplan"
+        android:textSize="18sp"
+        android:fontFamily="@font/oswald"
+        android:paddingTop="2dp"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20S" />
+
+    <TextView
+        android:id="@+id/textView21S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/oswald"
+        android:text="Github:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewGithubS"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCinsiyetS" />
+
+    <TextView
+        android:id="@+id/textViewGithubS"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittextarkaplan"
+        android:textSize="18sp"
+        android:fontFamily="@font/oswald"
+        android:paddingTop="2dp"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21S" />
+
+    <TextView
+        android:id="@+id/textView22S"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:fontFamily="@font/oswald"
+        android:text="Linkedin:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewLinkedinS"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGithubS" />
+
+    <TextView
+        android:id="@+id/textViewLinkedinS"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittextarkaplan"
+        android:textSize="18sp"
+        android:fontFamily="@font/oswald"
+        android:paddingTop="2dp"
+        android:paddingLeft="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22S" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

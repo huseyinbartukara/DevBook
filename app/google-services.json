@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "320000301218",
+    "project_id": "devbook-62500",
+    "storage_bucket": "devbook-62500.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:320000301218:android:d8b1eccd464c595d0a9ffb",
+        "android_client_info": {
+          "package_name": "com.bartukaraa.devbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "320000301218-ra3h5h64juk8ne1qiuk7rnt9gte93nrb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD67lnVESWy9fXc_-E1XJlJx5TFFruB-LU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "320000301218-ra3h5h64juk8ne1qiuk7rnt9gte93nrb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

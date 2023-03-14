@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.bartukaraa.devbook.ui.fragment.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/girisYapFragnmentGecis"
+            app:destination="@id/girisYapFragment" />
+        <action
+            android:id="@+id/kullaniciVarGirisi"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/girisYapFragment"
+        android:name="com.bartukaraa.devbook.ui.fragment.GirisYapFragment"
+        android:label="fragment_giris_yap"
+        tools:layout="@layout/fragment_giris_yap" >
+        <action
+            android:id="@+id/mainFragmentGecis"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.bartukaraa.devbook.ui.fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/ilanFragmentGecis"
+            app:destination="@id/ilanFragment" />
+        <action
+            android:id="@+id/soruFragmentGecis"
+            app:destination="@id/soruFragment" />
+        <action
+            android:id="@+id/etkinlikFragmentGecis"
+            app:destination="@id/etkinlikFragment" />
+        <action
+            android:id="@+id/profileFragmentGecis"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/mesajlarFragmentGecis"
+            app:destination="@id/mesajlarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ilanFragment"
+        android:name="com.bartukaraa.devbook.ui.fragment.IlanFragment"
+        android:label="fragment_ilan"
+        tools:layout="@layout/fragment_ilan" >
+        <action
+            android:id="@+id/ilanVerFragmentGecis"
+            app:destination="@id/ilanVerFragment" />
+        <action
+            android:id="@+id/kullaniciProfileGoruntuleFragmentGecis"
+            app:destination="@id/kullaniciProfileGoruntuleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ilanVerFragment"
+        android:name="com.bartukaraa.devbook.ui.fragment.IlanVerFragment"
+        android:label="fragment_ilan_ver"
+        tools:layout="@layout/fragment_ilan_ver" >
+        <action
+            android:id="@+id/ilanYayinlamaBitisGecis"
+            app:destination="@id/ilanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/soruFragment"
+        android:name="com.bartukaraa.devbook.ui.fragment.SoruFragment"
+        android:label="fragment_soru"
+        tools:layout="@layout/fragment_soru" >
+        <action
+            android:id="@+id/chatFragmentGecis"
+            app:destination="@id/chatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/etkinlikFragment"
+        android:name="com.bartukaraa.devbook.ui.fragment.EtkinlikFragment"
+        android:label="fragment_etkinlik"
+        tools:layout="@layout/fragment_etkinlik" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.bartukaraa.devbook.ui.fragment.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/profileEditGecis"
+            app:destination="@id/profileEditFragment" />
+        <action
+            android:id="@+id/cikisYapGecis"
+            app:destination="@id/girisYapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileEditFragment"
+        android:name="com.bartukaraa.devbook.ui.fragment.ProfileEditFragment"
+        android:label="fragment_profile_edit"
+        tools:layout="@layout/fragment_profile_edit" >
+        <action
+            android:id="@+id/profileFragmentGecisEdit"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mesajlarFragment"
+        android:name="com.bartukaraa.devbook.ui.fragment.MesajlarFragment"
+        android:label="fragment_mesajlar"
+        tools:layout="@layout/fragment_mesajlar" />
+    <fragment
+        android:id="@+id/kullaniciProfileGoruntuleFragment"
+        android:name="com.bartukaraa.devbook.ui.fragment.KullaniciProfileGoruntuleFragment"
+        android:label="fragment_kullanici_profile_goruntule"
+        tools:layout="@layout/fragment_kullanici_profile_goruntule" >
+        <argument
+            android:name="useruid"
+            app:argType="string" />
+        <action
+            android:id="@+id/ozelChatFragmentGecis"
+            app:destination="@id/ozelChatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.bartukaraa.devbook.ui.fragment.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <argument
+            android:name="useruid"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/ozelChatFragment"
+        android:name="com.bartukaraa.devbook.ui.fragment.OzelChatFragment"
+        android:label="fragment_ozel_chat"
+        tools:layout="@layout/fragment_ozel_chat" >
+        <argument
+            android:name="ozelchatuid"
+            app:argType="string" />
+    </fragment>
+</navigation>

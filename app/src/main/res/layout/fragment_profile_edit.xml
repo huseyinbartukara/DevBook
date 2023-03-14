@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.ProfileEditFragment">
+
+
+    <TextView
+        android:id="@+id/textView16"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald"
+        android:text="Şehir:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextSehir"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAdSoyad" />
+
+    <EditText
+        android:id="@+id/editTextSehir"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittextarkaplan"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView17"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald"
+        android:text="İlgi Alanı:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextIlgiAlani"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSehir" />
+
+    <EditText
+        android:id="@+id/editTextIlgiAlani"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittextarkaplan"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald"
+        android:text="Geliştirdiği Dil:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextYas"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIlgiAlani" />
+
+    <EditText
+        android:id="@+id/editTextGelistirdigiDil"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittextarkaplan"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald"
+        android:text="Yaş:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextYas"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGelistirdigiDil" />
+
+    <EditText
+        android:id="@+id/editTextYas"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittextarkaplan"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald"
+        android:text="Cinsiyet:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/spinnerCinsiyet"
+        app:layout_constraintTop_toBottomOf="@+id/editTextYas" />
+
+    <Spinner
+        android:id="@+id/spinnerCinsiyet"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittextarkaplan"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald"
+        android:text="Github:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextGithub"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCinsiyet" />
+
+    <EditText
+        android:id="@+id/editTextGithub"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittextarkaplan"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald"
+        android:text="Linkedin:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextLinkedin"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGithub" />
+
+    <EditText
+        android:id="@+id/editTextLinkedin"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittextarkaplan"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/oswald"
+        android:text="Ad-Soyad:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextAdSoyad"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewResimSec" />
+
+    <EditText
+        android:id="@+id/editTextAdSoyad"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:background="@drawable/edittextarkaplan"
+        android:paddingLeft="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <ImageView
+        android:id="@+id/imageViewResimSec"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/profile_pic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald"
+        android:text="Daha iyi bir etkileşim için \nprofilinizi güncel tutun!"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewResimSec"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout"
+        app:layout_constraintStart_toEndOf="@+id/imageViewResimSec"
+        app:layout_constraintTop_toTopOf="@+id/imageViewResimSec" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textView24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="@+id/textView24"
+        app:layout_constraintVertical_bias="0.355">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/buttonKaydet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/okey_mavi_pic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/oswald"
+                android:text="Kaydet"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                app:layout_constraintTop_toTopOf="@+id/imageView9" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/buttonIptal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonKaydet">
+
+            <ImageView
+                android:id="@+id/imageView50"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/cancel_mavi_pic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/oswald"
+                android:text="İptal"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/imageView50"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
